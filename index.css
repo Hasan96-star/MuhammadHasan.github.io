@@ -1,0 +1,195 @@
+*{
+    font-family:  'Poppins', Courier, monospace;
+    list-style: none;
+}
+:root{
+    --primaryRed: #FF4D06;
+    --secondaryRed: #8d2800;
+    --primaryBlue: #23253A;
+    --lightBlue: #2B2D41;
+    --darkBlue: #1F2133;
+    --grey: #A2A2A2; 
+}
+body{
+    background-color: var(--primaryBlue);
+    color: white;
+}
+main{
+    width: 70%;
+    margin: 0 auto;
+}
+section{
+    height:  fit-content;
+}
+#experience{
+    height: fit-content;
+    margin-bottom: 10vh;
+}
+span{
+    color: red;
+} 
+.jobdisplay{
+    display: none;
+}
+.header-top-hide {
+    height: 0px !important;
+    margin: 0;
+    padding: 0;
+    display: none;
+    
+}
+.navbar {
+    background-color: rgba(172, 1, 1, 0.132); /* Set the background color to a transparent white */
+    backdrop-filter: blur(5px); /* Apply a 5-pixel blur effect to the background */
+    -webkit-backdrop-filter: blur(5px); /* Add support for Safari */
+    padding:20px 0 ;
+    transition: all 300ms ease-in-out;
+  }
+.nav-bar .nav-link:hover {
+    color: var(--primaryRed) !important;   
+}
+
+.imgbox{
+    height: 400px;
+    width: 400px;
+    border: 10px solid var(--secondaryRed);
+    border-radius: 50%;
+    box-shadow: rgba(78, 0, 0, 0.4) 0px 30px 90px;
+    transition: all 700ms ease-in-out;
+    animation: fadeinout 8s ease-in-out infinite;
+}
+@keyframes fadeinout {
+    0% {
+        box-shadow: rgba(130, 2, 2, 0.4) -700px 0px 800px;
+    }
+    50% {
+        box-shadow: rgba(191, 3, 3, 0.806) 10px 0px 100px;
+    }
+    100% {
+        box-shadow:rgba(130, 2, 2, 0.4) -700px 0px 800px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+.imgbox img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.skillContainer,.projectContainer{
+    margin-top: 20px;
+    background-color: var(--lightBlue);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 5px solid var(--darkBlue);
+    box-shadow: rgba(78, 0, 0, 0.4) 0px 30px 90px;
+}
+.projectContainer{
+    height: max-content;
+}
+.progress {
+    height: 10px;
+    margin: 5px 0;
+    background-color: var(--grey);
+  }
+.exContainer{
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+}
+.card{
+    background-color: var(--darkBlue);
+    transition: all 300ms ease-in-out;
+    border: 4px solid var(--grey);
+}
+/* #card2{
+    margin-top: 20%;
+    margin-left: -5%;
+}
+#card3{
+    margin-top: 40%;
+    margin-left: -5%;
+}
+#card4{
+    margin-top: 60%;
+    margin-left: -5%;
+} */
+
+.card:hover{
+    z-index: 9999;
+    transform: scale(1.1);
+    box-shadow: rgba(78, 0, 0, 0.4) 0px 30px 90px;
+}
+.pbuttons{
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid gray;
+}
+.pbuttons:hover{
+    border-bottom: 2px solid var(--primaryRed) !important;
+    background: rgba(78, 0, 0, 0.4) !important;
+}
+.jobbox ul li:before {
+    content: "\21D2"; /* use the right arrow character (→) */
+    margin-right: 0.5em; /* add some spacing between the arrow and the text */
+    color: var(--secondaryRed);
+    font-size: large;
+  }
+.jobbox ul li{
+    margin-top: 10px;
+}
+footer{
+    position: relative;
+    margin: 0 auto;
+    padding: 5vh 0;
+    /* background: rgb(255,73,0); */
+    background: linear-gradient(0deg, rgba(255,73,0,1) 0%, rgba(141,40,0,1) 29%, var(--primaryBlue) 100%);
+}
+.footerContainer{
+    width: 70%;
+}
+.socialLinks{
+    width: 10px;
+}
+.iconContainer a i{
+    color: var(--grey);
+    transition: all 300ms ease-in-out;
+}
+.iconContainer a i:hover{
+    color: var(--primaryRed);
+    transform: scale(1.3);
+}
+.sayHibtn a button{
+    border: 5px solid var(--secondaryRed);
+    padding: 10px 20px;
+    background-color: var(--darkBlue);
+    border-radius: 10px;
+    color: var(--grey);
+    transition: all 300ms ease-in-out;
+}
+.sayHibtn a button:hover{
+    border: 5px solid var(--primaryRed);
+    background-color: var(--primaryRed);
+    color: white;
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+    section {
+      height: 100vh;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    section{
+        margin-top: 100px;
+    }
+    .smallscreendis{
+        display: none;
+    }
+  }
